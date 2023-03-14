@@ -1,6 +1,13 @@
 from setuptools import find_packages,setup
 
-def get_requirements():
+from typing import List
+
+REQUIREMENT_FILE_NAME="requirements.txt"
+
+def get_requirements()->List[str]:
+    with open(REQUIREMENT_FILE_NAME) as requirement_file:
+        requirement_list = requirement_file.readlines()
+        requirement_list = [requirement_name.replace("\n","")] for requirement_name in requirement_list
     pass
 
 setup(

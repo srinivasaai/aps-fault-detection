@@ -19,5 +19,3 @@ numpy
 scikit-learn
 apache-airflow
 -e .
-Footer
-© 2023 GitHub, Inc.
